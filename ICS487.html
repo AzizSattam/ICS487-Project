@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Course Scheduler</title>
+    <link rel="stylesheet" type="text/css" href="ICS487.CSS">
+</head>
+
+<body>
+    <div class="container">
+        <h1>KFUPM Course Scheduler for ISE Major</h1>
+
+        <!-- Credit Hours Selection -->
+        <div class="input-group">
+            <label for="credit-hours">Credit Hours:</label>
+            <select id="credit-hours">
+                <option value="12">12 Credit Hours</option>
+                <option value="13">13 Credit Hours</option>
+                <option value="14">14 Credit Hours</option>
+                <option value="15">15 Credit Hours</option>
+                <option value="16">16 Credit Hours</option>
+                <option value="17">17 Credit Hours</option>
+                <option value="18">18 Credit Hours</option>
+                <option value="19">19 Credit Hours</option>
+                <option value="20">20 Credit Hours</option>
+            </select>
+        </div>
+
+
+        <!-- Semester Difficulty -->
+        <div class="input-group">
+            <label for="difficulty">Semester Difficulty:</label>
+            <select id="difficulty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <!-- Start Time Preference -->
+        <div class="input-group">
+            <label for="start-time">Preferred Start Time:</label>
+            <input type="time" id="start-time">
+        </div>
+
+        <!-- Completed Courses -->
+        <div class="input-group">
+            <label>Completed Courses:</label>
+            <div class="courses-list">
+                <label><input type="checkbox" name="completedCourses" value="MATH 101"> MATH 101</label>
+                <label><input type="checkbox" name="completedCourses" value="MATH 102"> MATH 102</label>
+                <label><input type="checkbox" name="completedCourses" value="MATH 201"> MATH 201</label>
+                <label><input type="checkbox" name="completedCourses" value="MATH 208"> MATH 208</label>
+                <label><input type="checkbox" name="completedCourses" value="PHYS 101"> PHYS 101</label>
+                <label><input type="checkbox" name="completedCourses" value="PHYS 102"> PHYS 102</label>
+                <label><input type="checkbox" name="completedCourses" value="CHEM 101"> CHEM 101</label>
+                <label><input type="checkbox" name="completedCourses" value="ENGL 101"> ENGL 101</label>
+                <label><input type="checkbox" name="completedCourses" value="ENGL 102"> ENGL 102</label>
+                <label><input type="checkbox" name="completedCourses" value="ENGL 214"> ENGL 214</label>
+                <label><input type="checkbox" name="completedCourses" value="CGS 292"> CGS 292</label>
+                <label><input type="checkbox" name="completedCourses" value="IAS 121"> IAS 121</label>
+                <label><input type="checkbox" name="completedCourses" value="IAS 111"> IAS 111</label>
+                <label><input type="checkbox" name="completedCourses" value="IAS 212"> IAS 212</label>
+                <label><input type="checkbox" name="completedCourses" value="CE 101"> CE 101</label>
+                <label><input type="checkbox" name="completedCourses" value="BUS 200"> BUS 200</label>
+                <label><input type="checkbox" name="completedCourses" value="ICS 104"> ICS 104</label>
+                <label><input type="checkbox" name="completedCourses" value="COE 292"> COE 292</label>
+                <label><input type="checkbox" name="completedCourses" value="ME 216/217"> ME 216/217</label>
+                <label><input type="checkbox" name="completedCourses" value="ME 322/323"> ME 322/323</label>
+                <label><input type="checkbox" name="completedCourses" value="EE 204"> EE 204</label>
+                <label><input type="checkbox" name="completedCourses" value="CIE 301"> CIE 301</label>
+                <label><input type="checkbox" name="completedCourses" value="CIE 305"> CIE 305</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 205"> ISE 205</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 291"> ISE 291</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 303"> ISE 303</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 307"> ISE 307</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 315"> ISE 315</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 320"> ISE 320</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 321"> ISE 321</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 324"> ISE 324</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 391"> ISE 391</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 402"> ISE 402</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 405"> ISE 405</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 411"> ISE 411</label>
+                <label><input type="checkbox" name="completedCourses" value="ISE 412"> ISE 412</label>
+            </div>
+        </div>
+
+
+        <!-- Submit Button -->
+        <button type="submit" id="generate-schedule">Generate Schedule</button>
+    </div>
+</body>
+
+</html>
